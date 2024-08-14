@@ -67,6 +67,7 @@ function stopTimer() {
 
 function skipTimer() {
     timerText.textContent = '00:00:00';
+    updateTimer();
 }
 
 function resetTimer() {
