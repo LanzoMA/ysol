@@ -12,25 +12,26 @@
     <div class="main-container">
         <div class="timer-container">
             <div>
-                <p>WORK</p>
-                <input type="text" id="sessionTypeInput">
+                <p id="sessionTypeText">WORK</p>
+                <input type="text" id="sessionTypeInput" class="session-text">
             </div>
             <div>
                 <p id="timerText">00:00:00</p>
                 <div id="timerInput">
-                    <input type="number">
+                    <input type="number" id="timerHoursInput">
                     <span>:</span>
-                    <input type="number">
+                    <input type="number" id="timerMinutesInput">
                     <span>:</span>
-                    <input type="number">
+                    <input type="number" id="timerSecondsInput">
                 </div>
             </div>
             <div class="controls">
                 <button id="startBtn" onclick="startTimer()" class="btn">Start</button>
-                <button id="resumeBtn" onclick="resumeTimer()" class="btn">Paused</button>
+                <button id="resumeBtn" onclick="startTimer()" class="btn">Resume</button>
                 <button id="stopBtn" onclick="stopTimer()" class="btn">Stop</button>
-                <button id="editBtn" class="btn">Edit</button>
+                <button id="editBtn" class="btn" onclick="editTimer()">Edit</button>
                 <button id="skipBtn" class="btn" onclick="skipTimer()">Skip</button>
+                <button id="confirmBtn" onclick="confirmTimer()" class="btn">Confirm</button>
             </div>
         </div>
     </div>
